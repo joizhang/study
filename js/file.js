@@ -1,14 +1,46 @@
 
+function addLoadEvent(func) { //run more function after the page is ready
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      oldonload();
+      func();
+    }
+  }
+}
+
+function prepareGallery() {
+  if(!document.getElementsByTagName) return false;
+  if(!document.getElementById) return false;
+  if(!document.getElementById("imageGallery")) return false;
+  var gallery = document.getElementById("imageGallery");
+  var links = document.getElementsByTagName("a");
+  for(var i = 0; i < links.length; i++) {
+    link[i].onClick = function() {
+      showPic(this);
+      return false;
+    }
+  }
+}
+
 function showPic(whichpic) {
+  if(!document.getElementById("placeholder")) return false;
   var source = whichpic.getAttribute("href");
   var placeholder = document.getElementById("placeholder");
   placeholder.setAttribute("src",source);
   //alert(description.childNodes[0].nodeValue);
   // alert(description.firstChild.nodeValue);
-  var text = whichpic.getAttribute("title");
-  var description = document.getElementById("description");
-  description.firstChild.nodeValue = text;
+  if(document.getElementById("description")) {
+    var text = whichpic.getAttribute("title");
+    var description = document.getElementById("description");
+    description.firstChild.nodeValue = text;
+  }
+  return true;
 }
+
+addLoadEvent(prepareGallery);
 /*
 function countBodyChidren() {
   var body_element = document.getElementsByTagName("body").[0];
