@@ -36,9 +36,11 @@ function showPic(whichpic) {
   //alert(description.childNodes[0].nodeValue);
   // alert(description.firstChild.nodeValue);
   if (document.getElementById("description")) {
-    var text = whichpic.getAttribute("title");
+    var text = whichpic.getAttribute("title") ? whichpic.getAttribute("tittle") : "";
     var description = document.getElementById("description");
-    description.firstChild.nodeValue = text;
+    if (description.firstChild.nodeType == 3) {
+      description.firstChild.nodeValue = text;
+    }
   }
   return true;
 }
