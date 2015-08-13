@@ -1,37 +1,38 @@
 * {
-  margin : 0;
+  /*margin : 0;*/
 }
-
 body {
   font-family: "Microsoft Yahei", "Arial", serif;
   color: #333;
   background-color: #ccc;
 
 }
-
 h1 {
-  color: #c60;
+  color: #333;
   background-color: :transparent;
+}
+a {
+  color: #c60;
+  background-color: transparent;
   font-weight: bold;
-  text-decoration: :none;
+  text-decoration: none;
 }
-
 ul {
-  padding ;0
+  padding :0;
 }
-
 li{
   float: left;
   padding: 1em;
   list-style-type: none;
 }
-
-img{
-  display: block;
-  clear: both;
+#imageGallery {
+  list-style: none;
 }
-
-p {
-  margin-top: 10px;
-  margin-left: 10px;
+#imageGallery li {
+  display: inline;
+}
+#imageGallery li a img {
+  border: 0;
+  width: 48px;
+  height: 76px;
 }
