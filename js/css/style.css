@@ -19,6 +19,8 @@ a {
 }
 ul {
   padding :0;
+  width :100%;
+  overflow: auto;
 }
 li{
   float: left;
@@ -35,4 +37,8 @@ li{
   border: 0;
   width: 48px;
   height: 76px;
+}
+#placeholder {
+  max-width: 500px;
+  max-height: 500px;
 }

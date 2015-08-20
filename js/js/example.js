@@ -1,3 +1,15 @@
+//7.3
+window.onload = function() {
+  var placeholder = document.createElement("img");
+  placeholder.setAttribute("id", "placeholder");
+  placeholder.setAttribute("src", "images/placeholder.jpg");
+  placeholder.setAttribute("alt", "my image gallery");
+  var description = document.createElement("p");
+  description.setAttribute("id", "description");
+  var desctext = document.createTextNode("Choose an image");
+}
+/*
+//7.2
 window.onload = function() {
   var para = document.createElement("p");
   var txt1 = document.createTextNode("This is ");
@@ -11,7 +23,9 @@ window.onload = function() {
   var divtest = document.getElementById("testdiv");
   divtest.appendChild(para);
 }
-/*window.onload = function() {
+
+
+window.onload = function() {
   var para = document.createElement("p");
   var txt = document.createTextNode("Hello World!");
   para.appendChild(txt);
