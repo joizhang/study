@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<title>Apple Watch宣传页</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.5/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="fullpage">
+	    <div class="section section1">
+	    	<h1>它，终于来了。</h1>
+	    	<p>
+	    		为了充分发挥体积小巧以及佩戴于手腕的优势，Apple Watch带来全新的科技和互动方式。它可以让你跟快速便捷地完成一些早已习惯的事
+	    	</p>
+	    	<a href="#">进一步了解</a>
+	    </div>
+	    <div class="section section2">
+	    	<h1>真正与你贴近的个人设备</h1>
+	    	<a href="#">进一步了解</a>
+	    </div>
+	    <div class="section section3">
+	    	<h1>非同一般的精准记时</h1>
+	    	<p>高级手表向来以计时精准为本，Appple Watch更是如此。它与你的iPhone配合使用，同全球标准时间的误差不超过50毫秒。而且你可以对表盘进行个性化设定，以更具个性和意义的方式显示时间，湿气更贴合你的生活和日程需求</p>
+	    	<a href="#">进一步了解</a>
+	    </div>
+	    <div class="section section4">
+	    	<h1>在三个特点鲜明的系列中找到你的风格</h1>
+	    	<div class="row">
+	    		<div class="column">
+	    			<img src="img/primary_large_2x.jpg" class="primary">
+	    			<h4 class="primary"></h4>
+
+	    			<div class="intro">
+	    				<p>不锈钢或深空黑色不锈钢表壳，蓝宝石水晶镜面，搭配多款时尚表带</p>
+	    				<a href="#">了解更多</a>
+	    			</div>
+	    		</div>
+	    	</div>
+
+	    	<div class="row">
+	    		<div class="column">
+	    			<img src="img/sport_large_2x.jpg" class="sport">
+	    			<h4 class="sport"></h4>
+
+	    			<div class="intro">
+	    				<p>不锈钢或深空黑色不锈钢表壳，蓝宝石水晶镜面，搭配多款时尚表带</p>
+	    				<a href="#">了解更多</a>
+	    			</div>
+	    		</div>
+	    	</div>
+
+	    	<div class="row">
+	    		<div class="column">
+	    			<img src="img/edition_large_2x.jpg" class="edition">
+	    			<h4 class="edition"></h4>
+
+	    			<div class="intro">
+	    				<p>不锈钢或深空黑色不锈钢表壳，蓝宝石水晶镜面，搭配多款时尚表带</p>
+	    				<a href="#">了解更多</a>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	</div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.5/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.5/vendors/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.5/vendors/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			verticleCentered: true,
+			anchors: ['fistPage','secondPage','thirdPage','forthPage'],
+			navigation: true,
+			navigationTooltips: ['它，终于来了。','真正与你贴近的个人设备','非同一般的精准记时','在三个特点鲜明的系列中找到你的风格'],
+		});
+	});
+	</script>
+</body>
+</html>
