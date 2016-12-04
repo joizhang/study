@@ -1,2 +1,17 @@
+# C
+*.out
+*.o
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# Intellij project files
 *.iml
-target
+.idea/
+
+# Others
+target/
+logs/
+node_modules/
