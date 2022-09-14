@@ -20,7 +20,7 @@
 /* HP-UX 11 doesn't have this header file */
 #include <sys/select.h>
 #endif
-#include "tlpi_hdr.h"
+#include "lib/tlpi_hdr.h"
 
 static void
 usageError(const char *progName)
