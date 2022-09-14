@@ -1,2 +1,3 @@
 # study
-including c languange ,java and javascript
+
+Including C programming language and JavaScript.
