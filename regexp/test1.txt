@@ -1,7 +1,0 @@
-regexp: \bis\b
-He is a good boy.
-This is a test.
-Where are you?
-Display is also a noun.
-isn't it?
-What is you name?
